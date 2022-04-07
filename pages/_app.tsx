@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import '../styles/globals.css';
+import '../styles/font.css';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 	return <Component {...pageProps} />;
