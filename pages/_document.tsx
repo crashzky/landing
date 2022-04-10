@@ -11,8 +11,8 @@ class CustomDocument extends Document {
 		  '<script src=\'https://mc.yandex.ru/metrika/watch.js\' type=\'text/javascript\'></script>' +
 		  '<script type=\'text/javascript\'>' +
 				'try {' +
-					  'var yaCounterXXXXX = new Ya.Metrika({' +
-					  'id:XXXXX,' +
+					  'var yaCounter88231122 = new Ya.Metrika({' +
+					  'id:88231122,' +
 					  'clickmap:true,' +
 					  'trackLinks:true,' +
 					  'accurateTrackBounce:true,' +
