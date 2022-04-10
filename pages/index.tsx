@@ -21,11 +21,6 @@ const MainPage = (): JSX.Element => {
 
 	return (
 		<main className='overflow-x-hidden'>
-			<Head>
-				<title>
-					Kirill Osintsev
-				</title>
-			</Head>
 			<div data-aos='fade-zoom-in'>
 				<Header />
 				<h1 className='text-[26px] font-bold text-center mt-3'>
