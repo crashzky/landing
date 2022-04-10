@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
-import { YMInitializer } from 'react-yandex-metrika';
 
 class CustomDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -7,12 +6,30 @@ class CustomDocument extends Document {
 		return { ...initialProps };
 	}
 
+	ym() {
+		return (
+		  '<script src=\'https://mc.yandex.ru/metrika/watch.js\' type=\'text/javascript\'></script>' +
+		  '<script type=\'text/javascript\'>' +
+				'try {' +
+					  'var yaCounterXXXXX = new Ya.Metrika({' +
+					  'id:XXXXX,' +
+					  'clickmap:true,' +
+					  'trackLinks:true,' +
+					  'accurateTrackBounce:true,' +
+					  'webvisor:true,' +
+					  'trackHash:true' +
+					'});' +
+				'} catch(e) { }' +
+		  '</script>'
+		);
+	};
+
 	render(): JSX.Element {
 		return (
 			<Html lang='ru'>
 				<Head />
 				<body>
-					<YMInitializer accounts={[88231122]} options={{ webvisor: true }} />
+					<div dangerouslySetInnerHTML={{ __html: this.ym() }} />
 					<Main />
 					<NextScript />
 				</body>
