@@ -6,7 +6,6 @@ import PROJECTS from '../shared/consts/projects';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import { useEffect } from 'react';
-import { Html } from 'next/document';
 
 import ArrowIcon from '../assets/arrow.svg';
 
