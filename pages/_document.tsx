@@ -27,11 +27,7 @@ class CustomDocument extends Document {
 	render(): JSX.Element {
 		return (
 			<Html lang='ru'>
-				<Head>
-					<title>
-						Kirill Osintsev
-					</title>
-				</Head>
+				<Head />
 				<body>
 					<div dangerouslySetInnerHTML={{ __html: this.ym() }} />
 					<Main />

@@ -6,6 +6,7 @@ import PROJECTS from '../shared/consts/projects';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 import ArrowIcon from '../assets/arrow.svg';
 
@@ -20,6 +21,11 @@ const MainPage = (): JSX.Element => {
 
 	return (
 		<main className='overflow-x-hidden'>
+			<Head>
+				<title>
+					Kirill Osintsev
+				</title>
+			</Head>
 			<div data-aos='fade-zoom-in'>
 				<Header />
 				<h1 className='text-[26px] font-bold text-center mt-3'>
