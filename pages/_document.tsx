@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
+import { YMInitializer } from 'react-yandex-metrika';
 
 class CustomDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -11,6 +12,7 @@ class CustomDocument extends Document {
 			<Html lang='ru'>
 				<Head />
 				<body>
+					<YMInitializer accounts={[88231122]} options={{ webvisor: true }} />
 					<Main />
 					<NextScript />
 				</body>
