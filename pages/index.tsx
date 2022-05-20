@@ -32,7 +32,7 @@ const MainPage = (): JSX.Element => {
 					Кирилл Осинцев
 				</h1>
 				<p className='text-center font-semibold text-gray mt-[10px]'>
-					Junior Front-End разработчик
+					Front-End разработчик
 				</p>
 				<Messengers className='sm:w-[400px] mx-auto' />
 			</div>
