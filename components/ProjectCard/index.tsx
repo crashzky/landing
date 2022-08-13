@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import useWindowDemantions from '../../hooks/useWidow';
 import Props from './ProjectCard.props';
+import { MD } from '../../shared/consts/breakpoints';
 
 import ArrowIcon from '../../assets/arrow.svg';
-import { MD } from '../../shared/consts/breakpoints';
 
 const ProjectCard: React.FC<Props> = ({ className = '', imageSrc, title, tasks, link, imagePosition = 'left', ...props }) => {
 	const { width } = useWindowDemantions();
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<Props> = ({ className = '', imageSrc, title, tasks, 
 				</p>
 				{link && (
 					<Link href={link}>
-						<a className='block font-bold text-md text-purple'>
+						<a target='_blank' className='block font-bold text-md text-purple'>
 							Смотреть проект
 							<ArrowIcon className='inline-block ml-[15px] -rotate-90' />
 						</a>

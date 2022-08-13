@@ -17,6 +17,12 @@ const PROJECTS: IProject[] = [
 		tasks: ['Front-End', 'SEO-оптимизация', 'Поддержка'],	
 		link: 'https://invoke.one',	
 	},
+	{
+		imageSrc: '/projects/sisbi.png',
+		title: 'Сервис по поиску работы и персонала - “SISBI”',
+		tasks: ['Front-End', 'SEO-оптимизация'],	
+		link: 'https://sisbi.netlify.app',	
+	},
 ];
 
 interface IProject {
