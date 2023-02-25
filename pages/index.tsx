@@ -55,7 +55,7 @@ const MainPage = (): JSX.Element => {
 			<Messengers data-aos='fade-up' className='sm:w-[400px] mx-auto mt-20 mb-32' />
 			<button
 				className='mx-auto block w-fit mb-16'
-				onClick={() => router.push('https://wooble.space')}
+				onClick={() => router.push('https://wooble.team')}
 			>
 				<Image
 					src='/wooble.svg'
